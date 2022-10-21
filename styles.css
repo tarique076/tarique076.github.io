@@ -164,6 +164,9 @@ span{
     margin-right: 22px;
     margin-bottom: 30px;
 }
+#mail{
+    background: rgba(128,103,240,1,);;
+}
 .social a:hover{
     transform: scale(1.5);
     transition: .5s;
@@ -186,7 +189,7 @@ span{
 .home-img img{
     max-width: 100%;
     /* width: 540px; */
-    width: 400px;
+    width: 350px;
     height: auto;
     border-radius: 15%;
 }
@@ -206,7 +209,7 @@ span{
     /* grid-template-columns: repeat(2,1fr); */
     grid-template-columns: 40% 60%;
     align-items: center;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     margin-top: -8%;
 }
 .about-text h1{
@@ -246,6 +249,7 @@ span{
     text-decoration: underline;
 }
 #skills_container{
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-gap: 3rem;
@@ -256,6 +260,10 @@ span{
 .skills{
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     /* justify-content: center; */
+}
+.skills:hover{
+    transform: scale(1.5);
+    transition: .5s;
 }
 .skills img{
     height: 120px;
