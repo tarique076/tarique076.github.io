@@ -37,7 +37,7 @@ header{
 }
 header.sticky{
     background: var(--bg-color);
-    padding: 13px 18%;
+    padding: 0px 18%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 #name-logo{
@@ -102,33 +102,39 @@ header.sticky{
 }
 
 section{
-    padding: 100px 18%;
+    /* padding: 100px 18%; */
+    padding: 80px 10%;
 }
 .home{
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background: url(../img/background1.jpg);
+    background: url(../img/background1.jpg) no-repeat center;
     background-size: cover;
-    background-position: relative;
+    /* background-position: relative; */
+    background-attachment: fixed;
+    /* position: sticky; */
+    z-index: -1;
     /* display: grid; */
     /* grid-template-columns: repeat(2,1fr); */
     align-items: center;
     text-align: center;
     /* grid-gap: 3rem; */
 }
+
 .home-text{
-    margin-top: 100px;
+    padding: 100px 16%;
+    margin-top: 50px;
 }
 .home-text h1{
-    margin: 10px 0px 25px;
+    margin: 10px 0px 20px;
     font-size: var(--big-font);
     line-height: 1;
     font-weight: 500;
 }
 .home-text h2{
     margin-bottom: 23px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
 }
 span{
@@ -179,8 +185,15 @@ span{
 }
 .home-img img{
     max-width: 100%;
-    width: 540px;
+    /* width: 540px; */
+    width: 400px;
     height: auto;
+    border-radius: 15%;
+}
+.section-bg{
+    background: url(../img/about-bg.png);
+    background-size: cover;
+    background-position: relative;
 }
 .about{
     min-height: 100vh;
@@ -189,16 +202,15 @@ span{
     /* background: url(../img/background1.jpg); */
     /* background-size: cover; */
     background-position: relative;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: grid; 
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-template-columns: 40% 60%;
     align-items: center;
-    grid-gap: 3rem;
-}
-.about-text{
-    margin-top: 100px;
+    grid-gap: 2rem;
+    margin-top: -8%;
 }
 .about-text h1{
-    margin: 10px 0px 25px;
+    margin: 10px 0px 10px;
     font-size: var(--big-font);
     line-height: 1;
     font-weight: 500;
@@ -221,4 +233,31 @@ span{
     color: var(--second-color);
     line-height: 28px;
     margin-bottom: 20px;
+}
+.section-head{
+    max-width: 100%;
+    width: 130px;
+    height: auto;
+    font-size: h2;
+    font-size: 4rem;
+    font-family: 'Ephesis', cursive;
+    margin-left: 80%;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+#skills_container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+.skills{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* justify-content: center; */
+}
+.skills img{
+    height: 120px;
+    width: 120px;
 }
