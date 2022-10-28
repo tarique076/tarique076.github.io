@@ -255,10 +255,10 @@ span{
     justify-content: space-evenly;
     margin-top: 8%;
 }
-.skills{
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    /* justify-content: center; */
-}
+/* .skills{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+} */
 .skills:hover{
     transform: scale(1.5);
     transition: .5s;
@@ -371,4 +371,75 @@ span{
 #contact-head{
     width: fit-content;
     margin-left: 75%;
+}
+.contact-con{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.contact-type-head{
+    font-size: 2.2rem;
+    margin-bottom: 60px;
+}
+.contacts-list{
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+}
+.contacts-list i{
+    font-size: 2.2rem;
+    margin-right: 40px;
+    color: var(--main-color);
+}
+.contacts-list a:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+#contact-email-head{
+    margin-bottom: 5%;
+}
+#message-form{
+    display: flex;
+    flex-direction: column;
+}
+#message-form input{
+    margin-bottom: 1rem;
+    font-size: 16px;
+    padding: 5px 2px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+#message-form div{
+    display: flex;
+    justify-content: space-between;
+}
+#visitor_name,#visitor_email{
+    width: 48%;
+}
+#message{
+    resize: none;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 120px;
+    outline: none;
+}
+#send_msg{
+    width: max-content;
+    margin-top: 1rem;
+    margin-left: 84%;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: grey;
+}
+#send_msg:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: var(--main-color);
 }
