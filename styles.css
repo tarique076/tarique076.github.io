@@ -27,7 +27,7 @@ header{
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -269,3 +269,87 @@ span{
     height: 120px;
     width: 120px;
 }
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.project{
+    box-shadow: rgba(50, 50, 93, 0.8) 0px 30px 60px -12px inset, rgba(0, 0, 0, 1) 0px 18px 36px -18px inset;
+    padding: 2rem;
+    border-radius: 5%;
+}
+.project:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.project p{
+    font-size: 14px;
+    line-height: 100%;
+}
+.project-divs{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 1.5rem;
+}
+.project-img-con img{
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
+}
+.pro-tech-stacks{
+    display: flex;
+}
+.pro-tech-stacks img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.pro-tech-stacks img{
+    width: 20%;
+    height: 60px;
+}
+.project-desc ul{
+    margin: 12px 0;
+    font-size: 14px;
+}
+.project-desc ul li{
+    list-style: disc;
+}
+.project-desc button{
+    width: 90%;
+    margin: auto;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #9c9a9a;
+}
+.project-desc .pro-git{
+    margin-bottom: 8px;
+}
+.project-desc button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: coral;
+}
+
+#git-stats-head{
+    width: fit-content;
+    margin-left: 40%;
+}
+#git-calender{
+    margin-top: 6%;
+}
+.git-perf{
+    display: flex;
+    gap: 1rem;
+}
+.git-lang{
+    text-align: center;
+    margin-top: 20px;
+}
+.git-perf, .git-trophies{
+    margin-top: 10px;
+}
+
