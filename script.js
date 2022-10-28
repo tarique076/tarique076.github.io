@@ -17,9 +17,3 @@ window.addEventListener("scroll", function(){
 var username = "tarique076";
 GitHubCalendar(".calendar", "tarique076", { responsive: true });
 
-// Use a proxy
-GitHubCalendar(".calendar", "tarique076", {
-   proxy (username) {
-     return fetch(`https://your-proxy.com/github?user=${username}`)
-   }
-}).then(r => r.text(username))
