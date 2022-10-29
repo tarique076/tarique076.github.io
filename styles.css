@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,7 +7,8 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
-:root{
+
+:root {
     --bg-color: #ffffff;
     --text-color: #000;
     --second-color: #a09dab;
@@ -18,11 +19,12 @@
     --p-font: 1.1rem;
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,12 +37,14 @@ header{
     padding: 30px 15%;
     transition: .3s;
 }
-header.sticky{
+
+header.sticky {
     background: var(--bg-color);
     padding: 0px 18%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
-#name-logo{
+
+#name-logo {
     max-width: 100%;
     width: 130px;
     height: auto;
@@ -49,19 +53,23 @@ header.sticky{
     margin-right: 50px;
     color: var(--main-color);
 }
-.navlist{
+
+.navlist {
     display: flex;
 }
-.navlist li{
+
+.navlist li {
     position: relative;
 }
-.navlist a{
+
+.navlist a {
     font-size: var(--p-font);
     color: var(--text-color);
     font-weight: 500;
     padding: 10px 27px;
 }
-.navlist a::after{
+
+.navlist a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -71,17 +79,20 @@ header.sticky{
     left: 0;
     transition: ease .40s;
 }
-.navlist a:hover::after{
+
+.navlist a:hover::after {
     width: 100%;
 }
-#menu-icon{
+
+#menu-icon {
     font-size: 35px;
     color: var(--text-color);
     z-index: 1001;
     cursor: pointer;
     display: none;
 }
-.top-btn{
+
+.top-btn {
     display: inline-block;
     padding: 9px 30px;
     background: transparent;
@@ -93,18 +104,20 @@ header.sticky{
     font-weight: 500;
     transition: ease .50s;
 }
-.top-btn:hover{
+
+.top-btn:hover {
     transform: scale(1.1);
     background: var(--main-color);
     border: 2px solid var(--main-color);
     color: var(--bg-color);
 }
 
-section{
+section {
     padding: 80px 10%;
 }
-.home{
-    min-height: 100vh;
+
+.home {
+    /* min-height: 100vh; */
     height: 100%;
     width: 100%;
     background: url(../img/background1.jpg) no-repeat center;
@@ -120,51 +133,60 @@ section{
     /* grid-gap: 3rem; */
 }
 
-.home-text{
+.home-text {
     padding: 100px 16%;
     margin-top: 50px;
 }
-.home-text h1{
+
+.home-text h1 {
     margin: 10px 0px 20px;
     font-size: var(--big-font);
     line-height: 1;
     font-weight: 500;
 }
-.home-text h3{
+
+.home-text h3 {
     margin-bottom: 23px;
     font-size: var(--h3-font);
     font-weight: 500;
 }
-span{
+
+span {
     color: var(--main-color);
 }
-.home-text p{
+
+.home-text p {
     font-size: var(--p-font);
     color: var(--second-color);
     line-height: 28px;
     margin-bottom: 20px;
 }
-.social a{
+
+.social a {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(128,103,240,1,);
+    background: rgba(128, 103, 240, 1, );
     font-size: 30px;
     /* color: var(--bg-color); */
     margin-right: 22px;
     margin-bottom: 30px;
 }
-#mail{
-    background: rgba(128,103,240,1,);;
+
+#mail {
+    background: rgba(128, 103, 240, 1, );
+    ;
 }
-.social a:hover{
+
+.social a:hover {
     transform: scale(1.5);
     transition: .5s;
 }
-.btn{
+
+.btn {
     margin-right: 2%;
     display: inline-block;
     color: var(--bg-color);
@@ -176,140 +198,171 @@ span{
     border-radius: 30px;
     transition: ease .40s;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.1);
 }
-.home-img img{
+
+.home-img img {
     max-width: 100%;
     /* width: 540px; */
     width: 350px;
     height: auto;
     border-radius: 15%;
 }
-.section-bg{
+
+.section-bg {
     background: url(../img/about-bg.png);
     background-size: cover;
     background-position: relative;
 }
-.about{
+
+.about {
     min-height: 100vh;
     height: 100%;
     width: 100%;
     /* background: url(../img/background1.jpg); */
     /* background-size: cover; */
     background-position: relative;
-    display: grid; 
+    display: grid;
     /* grid-template-columns: repeat(2,1fr); */
     grid-template-columns: 40% 60%;
     align-items: center;
     grid-gap: 1rem;
     margin-top: -8%;
 }
-.about-text h1{
+
+.about-text h1 {
     margin: 10px 0px 10px;
-    font-size: var(--big-font);
+    font-size: var(--h2-font);
+    color: var(--main-color);
     line-height: 1;
     font-weight: 500;
 }
-.about-text h5{
+
+.about-text h5 {
     margin-bottom: 23px;
-    font-size: 2rem;
+    font-size: var(--h3-font);
     font-weight: 500;
 }
-span{
+
+span {
     color: var(--main-color);
 }
-.about-text h3{
-    color: var(--main-color);
-    font-size: 2rem;
+
+.about-text h3 {
+    font-size: var(--h3-font);
     font-weight: 500;
 }
-.about-text p{
+
+.about-text p {
     font-size: var(--p-font);
     color: var(--second-color);
     line-height: 28px;
     margin-bottom: 20px;
 }
-.section-head{
-    max-width: 100%;
-    width: 130px;
+
+.section-head {
+    /* max-width: fit-content; */
+    /* width: 130px; */
     height: auto;
     font-size: var(--big-font);
     font-family: 'Ephesis', cursive;
-    margin-left: 80%;
+    /* margin-left: 80%; */
+    text-align: right;
     color: var(--main-color);
     text-decoration: underline;
 }
-#skills_container{
+
+#skills_container {
+    width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 3rem;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 8%;
 }
+
 /* .skills{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-content: center;
 } */
-.skills:hover{
+.skills:hover {
     transform: scale(1.5);
     transition: .5s;
 }
-.skills img{
+
+.skills img {
     height: 120px;
     width: 120px;
 }
-.project-container{
+
+.project-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-content: space-evenly;
     margin-top: 3%;
 }
-.project{
+
+.project {
     box-shadow: rgba(50, 50, 93, 0.8) 0px 30px 60px -12px inset, rgba(0, 0, 0, 1) 0px 18px 36px -18px inset;
     padding: 2rem;
     border-radius: 5%;
 }
-.project:hover{
+
+.project:hover {
     transform: scale(1.1);
     transition: .5s;
 }
-.project p{
+.project h2{
+    font-size: var(--h3-font);
+    color: var(--main-color);
+    font-weight: 500;
+}
+.project p {
     font-size: var(--p-font);
     line-height: 100%;
 }
-.project-divs{
+
+.project-divs {
     display: grid;
     grid-template-columns: 65% 35%;
     gap: 1.5rem;
 }
-.project-img-con img{
+
+.project-img-con img {
     width: 100%;
     height: auto;
     margin: 12px 0;
 }
-.pro-tech-stacks{
+
+.pro-tech-stacks {
     display: flex;
 }
-.pro-tech-stacks img:hover{
+
+.pro-tech-stacks img:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
-.pro-tech-stacks img{
+
+.pro-tech-stacks img {
     width: 20%;
     height: 60px;
 }
-.project-desc ul{
+
+.project-desc ul {
     margin: 12px 0;
     font-size: 14px;
 }
-.project-desc ul li{
+
+.project-desc ul li {
     list-style: disc;
 }
-.project-desc button{
+
+.project-desc button {
     width: 90%;
     margin: auto;
     padding: 3px;
@@ -317,64 +370,85 @@ span{
     font-size: 15px;
     background-color: #9c9a9a;
 }
-.project-desc .pro-git{
+
+.project-desc .pro-git {
     margin-bottom: 8px;
 }
-.project-desc button:hover{
+
+.project-desc button:hover {
     transform: scale(1.1);
     transition: 0.5s;
     background-color: var(--main-color);
 }
-#git-stats{
+
+#git-stats {
     background-size: cover;
 }
-#git-stats-head{
+
+/* #git-stats-head {
     width: fit-content;
     margin-left: 40%;
-}
-#git-calender{
+} */
+
+#git-calender {
     margin-top: 6%;
 }
-#git-calender:hover{
+
+#git-calender:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-.git-perf{
+
+.git-perf {
     display: flex;
-    gap: 1rem;
+    justify-content: space-evenly;
 }
-.git-perf img{
-    width: 90%;
+
+.git-perf img {
+    width: 48%;
 }
-.git-perf img:hover{
+
+.git-perf img:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-.git-lang{
-    text-align: center;
+
+.git-lang {
+    width: 60%;
+    margin: auto;
+    /* text-align: center; */
     margin-top: 20px;
 }
-.git-lang:hover{
+.git-lang img{
+    width: 100%;
+}
+.git-lang:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
-.git-perf, .git-trophies{
+
+.git-perf,
+.git-trophies {
     justify-content: space-evenly;
     margin-top: 10px;
 }
-.git-trophies img{
+
+.git-trophies img {
     width: 90%;
     margin: auto;
 }
-.git-trophies:hover{
+
+.git-trophies:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
-#contact-head{
+
+/* #contact-head {
     width: fit-content;
     margin-left: 75%;
-}
-.contact-con{
+} */
+
+.contact-con {
     text-align: center;
     width: max-content;
     margin: auto;
@@ -384,25 +458,30 @@ span{
     justify-content: space-evenly;
     gap: 2rem; */
 }
-.contact-type-head{
+
+.contact-type-head {
     font-size: 2.2rem;
     margin-bottom: 60px;
 }
-.contacts-list{
+
+.contacts-list {
     margin: auto;
     margin-bottom: 40px;
     /* display: flex; */
     /* justify-content: center; */
     /* text-align: center; */
 }
-.contacts-list i{
-    font-size: 2.2rem;
+
+.contacts-list i {
+    font-size: var(--h3-font);
     color: var(--main-color);
 }
-.con-btn:hover{
+
+.con-btn:hover {
     transform: scale(1.4);
     transition: 0.5s;
 }
+
 /* #contact-email-head{
     margin-bottom: 5%;
 }
@@ -449,10 +528,11 @@ span{
     transition: 0.5s;
     background-color: var(--main-color);
 } */
-.ends{
+.ends {
     padding: 10px;
 }
-.ends p{
+
+.ends p {
     /* font-size: var(--p-font); */
     letter-spacing: 1px;
 }
@@ -461,101 +541,181 @@ span{
 
 /* Medium Screen */
 @media (max-width: 1100px) {
-    header{
+    header {
         padding: 16px 3%;
         transition: 0.3s;
     }
-    header.sticky{
+
+    header.sticky {
         padding: 5px 3%;
         transition: 0.3s;
     }
-    section{
+
+    section {
         padding: 70px 3%;
         transition: 0.3s;
     }
-    :root{
-        --big-font: 3.5rem;
+
+    :root {
+        --big-font: 3.3rem;
         --h2-font: 2.3rem;
         --p-font: 1rem;
         transition: 0.3s;
     }
-    .git-perf{
+
+}
+
+
+/* Small Screen */
+@media (max-width: 920px) {
+    #menu-icon {
+        display: block;
+    }
+
+    /* .home{
+            min-height: 80vh;
+        } */
+    .home-text {
+        padding: 100px 16%;
+        margin-top: 20px;
+    }
+
+    .navlist {
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--main-color);
+        text-align: right;
+        transition: all .40s;
+    }
+
+    .navlist a {
+        display: block;
+        padding: 1.2rem;
+        margin: 1.5rem;
+        margin-bottom: 0.8rem;
+        border-right: 2px solid var(--bg-color);
+        color: var(--bg-color);
+    }
+
+    .navlist a:hover {
+        background: var(--bg-color);
+        color: var(--main-color);
+    }
+
+    .navlist a::after {
+        display: none;
+    }
+
+    .navlist.active {
+        top: 100%;
+    }
+
+    .git-trophies img {
+        width: 90%;
+        margin: auto;
+    }
+
+    header {
+        padding: 16px 3%;
+        transition: 0.3s;
+    }
+
+    header.sticky {
+        padding: 5px 3%;
+        transition: 0.3s;
+    }
+
+    section {
+        padding: 70px 3%;
+        transition: 0.3s;
+    }
+
+    #skills_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .project-container {
+        gap: 1rem;
+    }
+    #git-stats-head{
+        /* margin-left: 0; */
+        text-align: right;
+    }
+    #contact-head{
+        margin-left: 70%;
+    }
+    :root {
+        --big-font: 3rem;
+        --h2-font: 2.3rem;
+        --h3-font: 1.8rem;
+        --p-font: 1rem;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --big-font: 3rem;
+        --h2-font: 2rem;
+        --h3-font: 1.5rem;
+        --p-font: 1rem;
+        transition: 0.3s;
+    }
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills img {
+        height: 100px;
+        width: 100px;
+    }
+    .about{
+        display: block;
+    }
+    .home-img{
+        width: 230px;
+        margin: auto;
+        margin-top: 70px;
+    }
+    .about-text{
+        margin: auto;
+        text-align: center;
+    }
+    #git-stats-head{
+        margin-left: 5%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    #skills_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    :root {
+        --big-font: 2.5rem;
+        --h2-font: 1.6rem;
+        --h3-font: 1.2rem;
+        --p-font:0.8rem;
+        transition: 0.3s;
+    }
+    .section-head{
+        margin: auto;
+        text-align: center;
+    }
+    #contact-head{
+        text-align: center;
+        margin: auto;
+    }
+    .git-perf {
         flex-direction: column;
     }
-  }
 
-
-   /* Small Screen */
-   @media (max-width: 920px) {
-        #menu-icon{
-            display: block;
-        }
-        .home{
-            min-height: 80vh;
-        }
-        .navlist{
-            position: absolute;
-            top: -600px;
-            left: 0;
-            right: 0;
-            flex-direction: column;
-            background-color: var(--main-color);
-            text-align: right;
-            transition: all .40s;   
-        }
-        .navlist a{
-            display: block;
-            padding: 1.2rem;
-            margin: 1.5rem;
-            margin-bottom: 0.8rem;
-            border-right: 2px solid var(--bg-color);
-            color: var(--bg-color);
-        }
-        .navlist a:hover{
-            background: var(--bg-color);
-            color: var(--main-color);
-        }
-        .navlist a::after{
-            display: none;
-        }
-        .navlist.active{
-            top: 100%;
-        }
-        .git-perf{
-            flex-direction: column;
-        }
-        .git-perf img{
-            width: 80%;
-            margin: auto;
-        }
-        .git-trophies img{
-            width: 90%;
-            margin: auto;
-        }
-        header{
-            padding: 16px 3%;
-            transition: 0.3s;
-        }
-        header.sticky{
-            padding: 5px 3%;
-            transition: 0.3s;
-        }
-        section{
-            padding: 70px 3%;
-            transition: 0.3s;
-        }
-        #skills_container{
-            grid-template-columns: repeat(4,1fr);
-        }
-        .project-container{
-            grid-template-columns: repeat(1,1fr);
-        }
-        :root{
-            --big-font: 3rem;
-            --h2-font: 2.3rem;
-            --h3-font: 1.8rem;
-            --p-font: 1rem;
-            transition: 0.3s;
-        }
-  }
-
+    .git-perf img {
+        width: 50%;
+        margin: auto;
+    }
+    /* #git-stats-head{
+        margin: 0;
+    } */
+}
