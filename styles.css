@@ -422,7 +422,7 @@ span {
 .git-lang img{
     width: 100%;
 }
-.git-lang:hover {
+.git-lang img:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
@@ -438,7 +438,7 @@ span {
     margin: auto;
 }
 
-.git-trophies:hover {
+.git-trophies img:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
