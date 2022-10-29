@@ -34,7 +34,7 @@ window.onscroll = () => {
 
 // -------------- Scroll -------------------
 const  sr = ScrollReveal ({
-   distance: '100px',
+   distance: '20px',
    duration: 1500,
    reset: true
 })
