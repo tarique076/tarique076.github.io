@@ -34,7 +34,7 @@
         <div class="home-text">
 
             <h1>Hello, I'm <span>Tarique Anwar.</span></h1>
-            <h2>I'm a <span class="auto-type"></span></h2>
+            <h3>I'm a <span class="auto-type"></span></h3>
             <p>I'm a passionate Java Backend Developer with problem-solving skills having proficiency in Spring.
             A good learner, always excited to learn new technologies. </p>
             <div class="social">
@@ -204,46 +204,60 @@
 
         <div class="contact-con">
             <div class="contact-links">
-                <h1 class="contact-type-head">Get in touch.</h1>
+                <!-- <h1 class="contact-type-head">Get in touch.</h1> -->
+
+                <div class="contacts-list" id="contact-email">
+                    <a href="mailto: anwartarique408@gmail.com"><h2 class="con-btn"><span><i class='bx bxs-envelope'></i></span></h2></a>
+                    <a href="mailto: anwartarique408@gmail.com" style="color:#000"><h2 class="con-btn">anwartarique408@gmail.com</h2></a>
+                </div>
+
                 <div class="contacts-list" id="contact-phone">
                     <h2><span><i class='bx bxs-phone'></i></span></h2>
                     <h2>+918971703647</h2>
                 </div>
 
-                <div class="contacts-list" id="contact-email">
-                    <a href="mailto: anwartarique408@gmail.com"><h2><span><i class='bx bxs-envelope'></i></span></h2></a>
-                    <a href="mailto: anwartarique408@gmail.com" style="color:#000"><h2>anwartarique408@gmail.com</h2></a>
-                </div>
-
                 <div class="contacts-list" id="contact-linkedin">
-                    <a href="https://www.linkedin.com/in/tarique-anwar-9667761b1/" target="_blank"><h2><span><i class='bx bxl-linkedin-square'></i></span></h2></a>
-                    <a href="https://www.linkedin.com/in/tarique-anwar-9667761b1/" style="color:#000" target="_blank"><h2>Tarique Anwar</h2></a>
+                    <a href="https://www.linkedin.com/in/tarique-anwar-9667761b1/" target="_blank"><h2 class="con-btn"><span><i class='bx bxl-linkedin-square'></i></span></h2></a>
+                    <a href="https://www.linkedin.com/in/tarique-anwar-9667761b1/" style="color:#000" target="_blank"><h2 class="con-btn">Tarique Anwar</h2></a>
                 </div>
 
                 <div class="contacts-list" id="contact-github">
-                    <a href="https://github.com/tarique076" target="_blank"><h2><span><i class='bx bxl-github'></i></span></h2></a>
-                    <a href="https://github.com/tarique076" style="color:#000" target="_blank"><h2>Tarique Anwar</h2></a>
+                    <a href="https://github.com/tarique076" target="_blank"><h2 class="con-btn"><span><i class='bx bxl-github'></i></span></h2></a>
+                    <a href="https://github.com/tarique076" style="color:#000" target="_blank"><h2 class="con-btn">Tarique Anwar</h2></a>
                 </div>
+
             </div>
-            <div class="email-con">
+            <!-- <div class="email-con">
                 <h1 class="contact-type-head" id="contact-email-head">Send email.</h1>
 
-                <form id="message-form">
+                <form id="message-form" action="https://api.web3forms.com/submit" method="POST" onsubmit=alert(""); reset(); value=false;">
+                    <input type="hidden" name="access_key" value="cb3e92f1-aa46-41d0-acf2-9a01933262c3">
+                    <input type="hidden" name="apikey" value="cb3e92f1-aa46-41d0-acf2-9a01933262c3">
+                    <input type="hidden" name="from_name" value="tarique076@github.io.com">
+                    <input type="hidden" name="redirect" value="#contact">
+                    
                     <div>
-                        <input type="text" id="visitor_name" placeholder="Your name" required>
-                        <input type="email" id="visitor_email" placeholder="Your email" required>
+                        <input type="text" name="First Name" id="visitor_name" placeholder="Your name" required>
+                        <input type="email" name="email" id="visitor_email" placeholder="Your email" required>
                     </div>
-                    <input type="text" id="visitor_subject" placeholder="Subject" required>
-                    <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="text" name="subject" id="visitor_subject" placeholder="Subject" required>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     <button type="submit" id="send_msg">Send</button>
                 </form>
 
-            </div>
+            </div> -->
         </div>
     </section>
 
+    <!-- ------End ------ -->
+    <div class="ends">
+        <p>© 2022 All Rights Reserved</p>
+    </div>
+
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script src="script.js"></script>
 
 </body>
