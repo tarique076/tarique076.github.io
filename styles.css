@@ -44,8 +44,7 @@ header.sticky{
     max-width: 100%;
     width: 130px;
     height: auto;
-    font-size: h2;
-    font-size: 4rem;
+    font-size: var(--big-font);
     font-family: 'Ephesis', cursive;
     margin-right: 50px;
     color: var(--main-color);
@@ -235,8 +234,7 @@ span{
     max-width: 100%;
     width: 130px;
     height: auto;
-    font-size: h2;
-    font-size: 4rem;
+    font-size: var(--big-font);
     font-family: 'Ephesis', cursive;
     margin-left: 80%;
     color: var(--main-color);
@@ -280,7 +278,7 @@ span{
     transition: .5s;
 }
 .project p{
-    font-size: 14px;
+    font-size: var(--p-font);
     line-height: 100%;
 }
 .project-divs{
@@ -325,7 +323,7 @@ span{
 .project-desc button:hover{
     transform: scale(1.1);
     transition: 0.5s;
-    background-color: coral;
+    background-color: var(--main-color);
 }
 #git-stats{
     background-size: cover;
@@ -345,6 +343,9 @@ span{
     display: flex;
     gap: 1rem;
 }
+.git-perf img{
+    width: 90%;
+}
 .git-perf img:hover{
     transform: scale(1.1);
     transition: 0.5s;
@@ -358,7 +359,12 @@ span{
     transition: 0.5s;
 }
 .git-perf, .git-trophies{
+    justify-content: space-evenly;
     margin-top: 10px;
+}
+.git-trophies img{
+    width: 90%;
+    margin: auto;
 }
 .git-trophies:hover{
     transform: scale(1.2);
@@ -454,13 +460,13 @@ span{
 /* Resposiveness */
 
 /* Medium Screen */
-/* @media (max-width: 1425px) {
+@media (max-width: 1100px) {
     header{
         padding: 16px 3%;
         transition: 0.3s;
     }
     header.sticky{
-        padding: 10px 3%;
+        padding: 5px 3%;
         transition: 0.3s;
     }
     section{
@@ -468,7 +474,7 @@ span{
         transition: 0.3s;
     }
     :root{
-        --big-font: 4rem;
+        --big-font: 3.5rem;
         --h2-font: 2.3rem;
         --p-font: 1rem;
         transition: 0.3s;
@@ -476,7 +482,7 @@ span{
     .git-perf{
         flex-direction: column;
     }
-  } */
+  }
 
 
    /* Small Screen */
@@ -501,6 +507,7 @@ span{
             display: block;
             padding: 1.2rem;
             margin: 1.5rem;
+            margin-bottom: 0.8rem;
             border-right: 2px solid var(--bg-color);
             color: var(--bg-color);
         }
@@ -517,6 +524,14 @@ span{
         .git-perf{
             flex-direction: column;
         }
+        .git-perf img{
+            width: 80%;
+            margin: auto;
+        }
+        .git-trophies img{
+            width: 90%;
+            margin: auto;
+        }
         header{
             padding: 16px 3%;
             transition: 0.3s;
@@ -528,6 +543,12 @@ span{
         section{
             padding: 70px 3%;
             transition: 0.3s;
+        }
+        #skills_container{
+            grid-template-columns: repeat(4,1fr);
+        }
+        .project-container{
+            grid-template-columns: repeat(1,1fr);
         }
         :root{
             --big-font: 3rem;
