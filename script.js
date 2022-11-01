@@ -36,7 +36,7 @@ window.onscroll = () => {
 const  sr = ScrollReveal ({
    distance: '20px',
    duration: 1500,
-   reset: true
+   reset: false
 })
 
 sr.reveal('.about-text', {delay:150, origin:'right'});
