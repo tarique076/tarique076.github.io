@@ -459,10 +459,10 @@ span {
     gap: 2rem; */
 }
 
-.contact-type-head {
+/* .contact-type-head {
     font-size: 2.2rem;
     margin-bottom: 60px;
-}
+} */
 
 .contacts-list {
     margin: auto;
@@ -643,9 +643,9 @@ span {
         /* margin-left: 0; */
         text-align: right;
     }
-    #contact-head{
+    /* #contact-head{
         margin-left: 70%;
-    }
+    } */
     :root {
         --big-font: 3rem;
         --h2-font: 2.3rem;
@@ -717,5 +717,14 @@ span {
     }
     /* #git-stats-head{
         margin: 0;
+    } */
+}
+@media (max-width: 480px){
+    .project-divs{
+        display: block;
+    }
+    
+    /* .project-desc{
+        display: flex;
     } */
 }
