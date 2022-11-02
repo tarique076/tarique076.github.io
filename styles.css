@@ -263,12 +263,9 @@ span {
 }
 
 .section-head {
-    /* max-width: fit-content; */
-    /* width: 130px; */
     height: auto;
     font-size: var(--big-font);
     font-family: 'Ephesis', cursive;
-    /* margin-left: 80%; */
     text-align: right;
     color: var(--main-color);
     text-decoration: underline;
@@ -314,9 +311,10 @@ span {
 }
 
 .project:hover {
-    transform: scale(1.1);
+    transform:scale(1.2);
     transition: .5s;
 }
+
 .project h2{
     font-size: var(--h3-font);
     color: var(--main-color);
@@ -385,11 +383,6 @@ span {
     background-size: cover;
 }
 
-/* #git-stats-head {
-    width: fit-content;
-    margin-left: 40%;
-} */
-
 #git-calender {
     margin-top: 6%;
 }
@@ -416,7 +409,6 @@ span {
 .git-lang {
     width: 50%;
     margin: auto;
-    /* text-align: center; */
     margin-top: 20px;
 }
 .git-lang img{
@@ -442,11 +434,6 @@ span {
     transform: scale(1.2);
     transition: 0.5s;
 }
-
-/* #contact-head {
-    width: fit-content;
-    margin-left: 75%;
-} */
 
 .contact-con {
     text-align: center;
@@ -643,9 +630,6 @@ span {
         /* margin-left: 0; */
         text-align: right;
     }
-    /* #contact-head{
-        margin-left: 70%;
-    } */
     :root {
         --big-font: 3rem;
         --h2-font: 2.3rem;
@@ -714,6 +698,9 @@ span {
     .git-perf img {
         width: 50%;
         margin: auto;
+    }
+    #git-stats-head{
+        text-align: center;
     }
     /* #git-stats-head{
         margin: 0;
