@@ -218,7 +218,7 @@ span {
 }
 
 .about {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     height: 100%;
     width: 100%;
     /* background: url(../img/background1.jpg); */
@@ -229,7 +229,7 @@ span {
     grid-template-columns: 40% 60%;
     align-items: center;
     grid-gap: 1rem;
-    margin-top: -8%;
+    /* margin-top: -8%; */
 }
 
 .about-text h1 {
@@ -311,7 +311,7 @@ span {
 }
 
 /* .project:hover {
-    transform:scale(1.2);
+    transform:scale(1.1);
     transition: .5s;
 } */
 
