@@ -64,6 +64,7 @@ header.sticky {
 
 .navlist a {
     font-size: var(--p-font);
+    letter-spacing: 1px;
     color: var(--text-color);
     font-weight: 500;
     padding: 10px 27px;
@@ -94,7 +95,8 @@ header.sticky {
 
 .top-btn {
     display: inline-block;
-    padding: 9px 30px;
+    margin-left: 50px;
+    padding: 2px 25px;
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 30px;
@@ -120,7 +122,7 @@ section {
     /* min-height: 100vh; */
     height: 100%;
     width: 100%;
-    background: url(../img/background1.jpg) no-repeat center;
+    background: url(../img/about-bg.png) no-repeat center;
     background-size: cover;
     /* background-position: relative; */
     background-attachment: fixed;
@@ -212,7 +214,8 @@ span {
 }
 
 .section-bg {
-    background: url(../img/about-bg.png);
+    /* */
+    background: url(../img/background1.jpg) no-repeat center;
     background-size: cover;
     background-position: relative;
 }
