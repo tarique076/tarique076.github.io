@@ -113,7 +113,9 @@ header.sticky {
     border: 2px solid var(--main-color);
     color: var(--bg-color);
 }
-
+.navlist .top-btn:hover::after{
+    width: 0;
+}
 section {
     padding: 80px 10%;
 }
