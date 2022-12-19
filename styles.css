@@ -344,6 +344,7 @@ span {
 
 .pro-tech-stacks {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .pro-tech-stacks img:hover {
