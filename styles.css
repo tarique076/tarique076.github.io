@@ -276,6 +276,29 @@ span {
     text-decoration: underline;
 }
 
+/* Experience */
+.experience-comps img {
+    width: 15%;
+    height: 15%;
+}
+
+#exp_heading{
+    display: flex;
+}
+
+#exp_heading h4{
+    margin-right: 10%;
+}
+
+.experience-comps ul li{
+    display: list-item;
+    list-style-type: square;
+}
+
+#sken{
+    margin-bottom: 5%;
+}
+
 #skills_container {
     width: 100%;
     margin: auto;
