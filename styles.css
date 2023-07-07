@@ -598,7 +598,7 @@ span {
 
     .navlist {
         position: absolute;
-        top: -600px;
+        top: -700px;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -628,7 +628,7 @@ span {
     .navlist.active {
         top: 100%;
     }
-
+    
     .git-trophies img {
         width: 90%;
         margin: auto;
