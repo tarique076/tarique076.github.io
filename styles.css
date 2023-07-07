@@ -614,6 +614,7 @@ span {
         margin-bottom: 0.8rem;
         border-right: 2px solid var(--bg-color);
         color: var(--bg-color);
+        transition: ease .50s;
     }
 
     .navlist a:hover {
@@ -629,6 +630,13 @@ span {
         top: 100%;
     }
     
+    .top-btn {
+        border-radius: 0px;    
+    }
+    
+    .top-btn:hover {
+        transform: scale(1);
+    }
     .git-trophies img {
         width: 90%;
         margin: auto;
