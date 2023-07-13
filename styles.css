@@ -77,7 +77,7 @@ header.sticky {
     height: 2px;
     background: var(--main-color);
     bottom: -3px;
-    left: 0;
+    left: 10px;
     transition: ease .40s;
 }
 
