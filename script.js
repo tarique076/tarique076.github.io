@@ -12,6 +12,30 @@ window.addEventListener("scroll", function(){
    header.classList.toggle("sticky", this.window.scrollY>0); 
 })
 
+const sections = document.querySelectorAll('section');
+const navLi = document.querySelectorAll('.navlist li');
+
+navLi.forEach(li=> {
+   console.log(li);
+})
+
+window.addEventListener('scroll', ()=>{
+   let curr = '';
+
+   sections.forEach(section =>{
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if(pageYOffset +100 >= sectionTop){
+         curr = section.getAttribute('id');
+      }
+      navLi.forEach(li=>{
+         li.classList.remove('active');
+         if(li.classList.contains(curr + '_nav')){
+            li.classList.add('active');
+         }
+      })
+   })
+})
 
 // --------------GitHub-Calender--------------------
 var username = "tarique076";

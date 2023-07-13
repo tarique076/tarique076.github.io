@@ -70,6 +70,19 @@ header.sticky {
     padding: 10px 27px;
 }
 
+.navlist li.active a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    bottom: -3px;
+    left: 10px;
+    transition: ease .40s;
+    width: 100%;
+    left: 15px;
+}
+
 .navlist a::after {
     content: '';
     position: absolute;
@@ -83,6 +96,7 @@ header.sticky {
 
 .navlist a:hover::after {
     width: 100%;
+    left: 15px;
 }
 
 #menu-icon {
@@ -139,7 +153,6 @@ section {
 
 .home-text {
     padding: 100px 16%;
-    margin-top: 50px;
 }
 
 .home-text h1 {
