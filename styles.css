@@ -323,10 +323,13 @@ span {
     margin-top: 8%;
 }
 
-/* .skills{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.skills{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     justify-content: center;
-} */
+    align-items: center;
+    border-radius: 15%;
+}
 .skills:hover {
     transform: scale(1.5);
     transition: .5s;
@@ -335,6 +338,7 @@ span {
 .skills img {
     height: 120px;
     width: 120px;
+    padding: 5px 5px;
 }
 
 .project-container {
