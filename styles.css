@@ -726,6 +726,12 @@ span {
     
 }
 
+@media(max-width: 650px) {
+    #home_view_resume{
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 500px) {
     #skills_container {
         grid-template-columns: repeat(2, 1fr);
