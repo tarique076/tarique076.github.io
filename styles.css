@@ -781,3 +781,13 @@ span {
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 300px){
+    #home_download_resume{
+        padding: 10px 20px;
+    }
+
+    #home_view_resume{
+        padding: 10px 20px;
+    }
+}
