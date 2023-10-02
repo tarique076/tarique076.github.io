@@ -65,20 +65,29 @@ window.onscroll = () => {
 
 // -------------- Scroll -------------------
 const  sr = ScrollReveal ({
-   distance: '20px',
+   distance: '50px',
    duration: 1500,
    reset: false
 })
+
+sr.reveal('#home_view_resume', {delay:150, origin:'left'});
+sr.reveal('#home_download_resume', {delay:150, origin:'right'});
 
 sr.reveal('.about-text', {delay:150, origin:'right'});
 sr.reveal('.home-img', {delay:150, origin:'left'});
 
 sr.reveal('.home', {delay:50, origin:'top'});
 
+sr.reveal('#sken', {delay:150, origin:'left'});
+sr.reveal('#dell', {delay:150, origin:'right'});
+
 sr.reveal('#skills_container', {delay:150, origin:'left'});
 
 sr.reveal('#olx', {delay:150, origin:'left'});
 sr.reveal('#max', {delay:150, origin:'right'});
+sr.reveal('#cabway', {delay:150, origin:'left'});
+sr.reveal('#support', {delay:150, origin:'right'});
+sr.reveal('#weather', {delay:150, origin:'left'});
 
 sr.reveal('.calender', {delay:150, origin:'left'});
 sr.reveal('.git-lang', {delay:150, origin:'right'});
