@@ -70,13 +70,12 @@ const  sr = ScrollReveal ({
    reset: false
 })
 
+sr.reveal('.home-text', {delay:50, origin:'top'});
 sr.reveal('#home_view_resume', {delay:150, origin:'left'});
 sr.reveal('#home_download_resume', {delay:150, origin:'right'});
 
 sr.reveal('.about-text', {delay:150, origin:'right'});
 sr.reveal('.home-img', {delay:150, origin:'left'});
-
-sr.reveal('.home', {delay:50, origin:'top'});
 
 sr.reveal('#sken', {delay:150, origin:'left'});
 sr.reveal('#dell', {delay:150, origin:'right'});
