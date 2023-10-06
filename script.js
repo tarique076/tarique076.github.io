@@ -38,17 +38,17 @@ window.addEventListener('scroll', ()=>{
 })
 
 // --------------GitHub-Calender--------------------
-var username = "tarique076";
-GitHubCalendar(".calendar", "tarique076", { responsive: true });
+// var username = "tarique076";
+// GitHubCalendar(".calendar", "tarique076", { responsive: true });
 
  // Use a proxy
-//  GitHubCalendar(".calendar", "tarique076", {
-//    proxy (username) {
-//      return fetch(`https://github.io/github?user=${username}`)
-//    }
-// }).then(r => r.text())
+ GitHubCalendar(".calendar", "tarique076", {
+   proxy (username) {
+     return fetch(`https://github.io/github?user=${username}`)
+   }
+}).then(r => r.text())
 
-// ---------Menu responsive-------
+// ---------Menu responsiveness-------
 
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
