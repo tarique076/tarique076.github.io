@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "github-calendar": "^2.3.1",
+    "github-calendar": "^2.3.2",
     "scrollreveal": "^4.0.9"
   }
 }
