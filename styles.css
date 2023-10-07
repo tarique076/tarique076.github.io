@@ -261,9 +261,9 @@ span {
 .btn {
     margin-right: 2%;
     display: inline-block;
-    color: var(--bg-color);
-    background-color: var(--main-color);
-    font-size: var(--p-font);
+    /* color: var(--bg-color); */
+    /* background-color: var(--main-color);
+    font-size: var(--p-font); */
     padding: 10px 40px;
     font-weight: 500;
     line-height: 24px;
@@ -271,9 +271,9 @@ span {
     transition: ease .40s;
 }
 
-.btn:hover {
+/* .btn:hover {
     transform: scale(1.1);
-}
+} */
 
 .home-img img {
     max-width: 100%;
