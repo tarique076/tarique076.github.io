@@ -107,7 +107,7 @@ header.sticky {
     display: none;
 }
 
-.top-btn {
+/* .top-btn {
     display: inline-block;
     margin-left: 50px;
     padding: 2px 25px;
@@ -129,7 +129,62 @@ header.sticky {
 }
 .navlist .top-btn:hover::after{
     width: 0;
-}
+} */
+
+.button {
+    --color: var(--main-color);
+    display: inline-block;
+    margin-left: 50px;
+    padding: 2px 25px;
+    background-color: transparent;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-size: var(--p-font);
+    border: 2px solid var(--main-color);
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: var(--bg-color);
+    transform: scale(1.1);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
 section {
     padding: 80px 10%;
 }
