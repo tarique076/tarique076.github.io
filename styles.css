@@ -507,6 +507,16 @@ span {
     transition: 0.5s;
 }
 
+/* .git-stats-det{
+    width: 50%;
+    margin: auto;
+    align-items: center;
+}
+
+.git-stats-det img{
+    display: inline-block;
+} */
+
 .git-lang {
     width: 50%;
     margin: auto;
