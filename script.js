@@ -38,8 +38,8 @@ window.addEventListener('scroll', ()=>{
 })
 
 // --------------GitHub-Calender--------------------
-var username = "tarique076";
-GitHubCalendar(".calendar", "tarique076", { responsive: true });
+// var username = "tarique076";
+// GitHubCalendar(".calendar", "tarique076", { responsive: true });
 
  // Use a proxy
 //  GitHubCalendar(".calendar", "tarique076", {
