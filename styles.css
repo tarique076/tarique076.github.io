@@ -107,6 +107,10 @@ header.sticky {
     display: none;
 }
 
+.navlist .button{
+    margin-left: 50px;
+}
+
 /* .top-btn {
     display: inline-block;
     margin-left: 50px;
@@ -134,7 +138,7 @@ header.sticky {
 .button {
     --color: var(--main-color);
     display: inline-block;
-    margin-left: 50px;
+    margin: auto;
     padding: 2px 25px;
     background-color: transparent;
     border-radius: 30px;
@@ -254,8 +258,46 @@ span {
 }
 
 .social a:hover {
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
     transition: .5s;
+    animation: squeeze3124 0.9s both;
+}
+
+@keyframes squeeze3124 {
+    0% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   
+    30% {
+     -webkit-transform: scale3d(1.25, 0.75, 1);
+     transform: scale3d(1.25, 0.75, 1);
+    }
+   
+    40% {
+     -webkit-transform: scale3d(0.75, 1.25, 1);
+     transform: scale3d(0.75, 1.25, 1);
+    }
+   
+    50% {
+     -webkit-transform: scale3d(1.15, 0.85, 1);
+     transform: scale3d(1.15, 0.85, 1);
+    }
+   
+    65% {
+     -webkit-transform: scale3d(0.95, 1.05, 1);
+     transform: scale3d(0.95, 1.05, 1);
+    }
+   
+    75% {
+     -webkit-transform: scale3d(1.05, 0.95, 1);
+     transform: scale3d(1.05, 0.95, 1);
+    }
+   
+    100% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
 }
 
 .btn {
