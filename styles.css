@@ -428,7 +428,8 @@ span {
     border-radius: 15%;
 }
 .skills:hover {
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
+    animation: squeeze3124 0.9s both;
     transition: .5s;
 }
 
